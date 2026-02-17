@@ -46,20 +46,58 @@
         <p><input type="radio" name="genre" value="jazz">Jazz</p>
     </form> <br>
 
-    <form action="">
+    <!-- <form action="">
         <p>Please select your favorite music service(s)</p>
         <input type="checkbox" name="music-service" value="itunes">ITunes
         <input type="checkbox" name="music-service" value="lastfm">Last FM
         <input type="checkbox" name="music-service" value="sportify" checked>Spotify
-    </form>
+    </form> -->
 
-    <form action="">
+    <!-- <form action="">
         <p>What device do you isten on?</p>
         <select name="devices">
             <option value="ipod">Ipod</option>
             <option value="radio">Radio</option>
-            <option value="computer">Computer</option>
+            <option value="computer" selected>Computer</option>
         </select>
+    </form> -->
+
+    <!-- <form action="">
+        <p>Do you paly any of the following instruments?
+            (You can select more than one option by holding
+            down control on a PC or command key on a Mac
+            while selecting different options.)
+        </p>
+        <select name="instruments" multiple size="5">
+            <option value="guitar" selected>Guitar</option>
+            <option value="drums">Drums</option>
+            <option value="keyboard">Keyboard</option>
+            <option value="bass">Bass</option>
+        </select>
+    </form> -->
+
+    <form action="">
+        <p>Upload your song in mp3 format</p>
+        <input type="file" name="user-song" required> <br>
+        <input type="submit" name="user-song" value="Upload">
+    </form>
+    <form action="">
+        <p><input type="text" name="fullname" placeholder="Enter your full name" required></p>
+        <p><input type="email" name="email" placeholder="Enter your email address" required></p>
+        <p><input type="password" name="password" placeholder="Enter your password" required></p>
+        <p><input type="password" name="password" placeholder="Confirm your password" required></p>
+        <button type="submit">Create Account</button>
+    </form>
+
+    <form action="">
+        <p>Gender:</p>
+        <label for="gender">
+            <input type="radio" name="gender" id="gender" value="f">Female
+        </label> <br>
+        
+        <label for="gender">
+            <input type="radio" name="gender" id="gender" value="m">Male
+        </label>
     </form>
 </body>
 </html>
